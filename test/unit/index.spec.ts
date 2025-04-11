@@ -1,7 +1,7 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { AppModule } from '../../src/app.module';
+import { Test, TestingModule } from "@nestjs/testing";
+import { AppModule } from "../../src/app.module";
 
-describe('AppModule', () => {
+describe("AppModule", () => {
   let app: TestingModule;
 
   beforeAll(async () => {
@@ -10,7 +10,7 @@ describe('AppModule', () => {
     }).compile();
   });
 
-  it('should be defined', () => {
+  it("should be defined", () => {
     expect(app).toBeDefined();
   });
 

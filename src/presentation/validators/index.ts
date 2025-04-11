@@ -1,3 +1,2 @@
-export * from './create-atletica.validator';
-export * from './update-atletica.validator';
-export * from './delete-atletica.validator';
+// This file will export validators once they are created
+export * from "./positive-number.pipe";

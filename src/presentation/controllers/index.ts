@@ -1,3 +1,1 @@
-export * from './user.controller';
-export * from './auth.controller';
-export * from './event.controller';
+// This file will export controllers once they are created

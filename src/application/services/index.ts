@@ -1,3 +1,1 @@
-export * from './user.service';
-export * from './athlete.service';
-export * from './event.service';
+// This file will export services once they are created
