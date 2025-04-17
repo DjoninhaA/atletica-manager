@@ -7,8 +7,8 @@ import {
 
 @Injectable()
 export class PositiveNumberPipe implements PipeTransform {
-  transform(value: any, metadata: ArgumentMetadata) {
-    const number = parseInt(value);
+  transform(value: unknown) {
+    const number = parseInt(value as string, 10);
 
     if (isNaN(number)) {
       throw new BadRequestException("Value must be a number");
