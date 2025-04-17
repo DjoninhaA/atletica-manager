@@ -16,8 +16,13 @@ export default defineConfig([
       parserOptions: {
         project: "./tsconfig.json",
       },
+      globals: {
+        ...globals.jest,
+        ...globals.node,
+      },
     },
     rules: {
+      ...js.configs.recommended.rules,
       ...typescript.configs.recommended.rules,
     },
   },
