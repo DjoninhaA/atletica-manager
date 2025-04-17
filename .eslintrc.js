@@ -1,28 +1,20 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: 'tsconfig.json',
+    project: "tsconfig.json",
     tsconfigRootDir: __dirname,
-    sourceType: 'module',
+    sourceType: "module",
   },
-  plugins: ['@typescript-eslint', '@nestjs'],
-  extends: [
-    'plugin:@nestjs/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-  ],
+  plugins: ["@typescript-eslint"],
+  extends: ["plugin:@typescript-eslint/recommended"],
   root: true,
   env: {
-    node: true,   
+    node: true,
     es2021: true,
-    jest: true,   
-  },
-  globals:{
-    module: 'readonly',
-    __dirname: 'readonly',
+    jest: true,
   },
   rules: {
-    '@typescript-eslint/no-unused-vars': ['warn'],
-    '@typescript-eslint/explicit-function-return-type': 'off',
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "@typescript-eslint/explicit-function-return-type": "off",
   },
 };
