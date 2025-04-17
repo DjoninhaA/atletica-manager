@@ -2,11 +2,12 @@ import {
   PipeTransform,
   Injectable,
   BadRequestException,
+  ArgumentMetadata
 } from "@nestjs/common";
 
 @Injectable()
 export class PositiveNumberPipe implements PipeTransform {
-  transform(value: unknown) {
+  transform(value: unknown, metadata: ArgumentMetadata) {
     const number = parseInt(value as string, 10);
 
     if (isNaN(number)) {
